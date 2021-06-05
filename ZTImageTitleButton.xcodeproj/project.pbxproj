@@ -14,9 +14,11 @@
 		BC3805C4266B09980060957B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC3805C3266B09980060957B /* Assets.xcassets */; };
 		BC3805C7266B09980060957B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3805C5266B09980060957B /* LaunchScreen.storyboard */; };
 		BC3805D5266B0A6E0060957B /* UIButton+ZT.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3805D4266B0A6E0060957B /* UIButton+ZT.swift */; };
+		F04669B19CC3BDD709BD5F32 /* Pods_ZTImageTitleButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072BCD99A0027B89B87198D3 /* Pods_ZTImageTitleButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		072BCD99A0027B89B87198D3 /* Pods_ZTImageTitleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZTImageTitleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3805B7266B09970060957B /* ZTImageTitleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTImageTitleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC3805BA266B09970060957B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC3805BC266B09970060957B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		BC3805C6266B09980060957B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC3805C8266B09980060957B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC3805D4266B0A6E0060957B /* UIButton+ZT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ZT.swift"; sourceTree = "<group>"; };
+		BDC8901012B22389673E9D77 /* Pods-ZTImageTitleButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTImageTitleButton.release.xcconfig"; path = "Target Support Files/Pods-ZTImageTitleButton/Pods-ZTImageTitleButton.release.xcconfig"; sourceTree = "<group>"; };
+		DC47D522632C8EED1BAC9A16 /* Pods-ZTImageTitleButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTImageTitleButton.debug.xcconfig"; path = "Target Support Files/Pods-ZTImageTitleButton/Pods-ZTImageTitleButton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04669B19CC3BDD709BD5F32 /* Pods_ZTImageTitleButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8513C8B0371E20D60A1A754A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC47D522632C8EED1BAC9A16 /* Pods-ZTImageTitleButton.debug.xcconfig */,
+				BDC8901012B22389673E9D77 /* Pods-ZTImageTitleButton.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB06365B7E2694976ADEB961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				072BCD99A0027B89B87198D3 /* Pods_ZTImageTitleButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC3805AE266B09970060957B = {
 			isa = PBXGroup;
 			children = (
 				BC3805B9266B09970060957B /* ZTImageTitleButton */,
 				BC3805B8266B09970060957B /* Products */,
+				8513C8B0371E20D60A1A754A /* Pods */,
+				AB06365B7E2694976ADEB961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC3805CB266B09980060957B /* Build configuration list for PBXNativeTarget "ZTImageTitleButton" */;
 			buildPhases = (
+				AB3F259A4F98644A8BC1E027 /* [CP] Check Pods Manifest.lock */,
 				BC3805B3266B09970060957B /* Sources */,
 				BC3805B4266B09970060957B /* Frameworks */,
 				BC3805B5266B09970060957B /* Resources */,
+				A405B26F59EEC591CB96F565 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A405B26F59EEC591CB96F565 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZTImageTitleButton/Pods-ZTImageTitleButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZTImageTitleButton/Pods-ZTImageTitleButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZTImageTitleButton/Pods-ZTImageTitleButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3F259A4F98644A8BC1E027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZTImageTitleButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC3805B3266B09970060957B /* Sources */ = {
@@ -295,6 +364,7 @@
 		};
 		BC3805CC266B09980060957B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC47D522632C8EED1BAC9A16 /* Pods-ZTImageTitleButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		BC3805CD266B09980060957B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC8901012B22389673E9D77 /* Pods-ZTImageTitleButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
